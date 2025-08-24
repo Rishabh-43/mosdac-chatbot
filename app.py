@@ -2,15 +2,12 @@ import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
-import os
-from dotenv import load_dotenv
 import google.generativeai as genai
 
-# -------------------- Load Environment Variables --------------------
-load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# -------------------- Load API Key from Streamlit Secrets --------------------
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 if not GEMINI_API_KEY:
-    st.error("❌ GEMINI_API_KEY not found")
+    st.error("❌ GEMINI_API_KEY not found in Streamlit secrets")
     st.stop()
 
 genai.configure(api_key=GEMINI_API_KEY)
