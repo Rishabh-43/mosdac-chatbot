@@ -4,7 +4,7 @@
 Built using **RAG (Retrieval-Augmented Generation)** + **Knowledge Graphs** to enable intelligent Q&A on MOSDAC datasets.
 
 ## 🌐 Live Demo
-[Click here to try the chatbot](https://mosdac-chatbot-lcznugbdiabrjtbqkgcl6c.streamlit.app/)
+[Click here to try the chatbot](https://mosdac-chatbot-cfvvm3embzpnkg84cxqh7f.streamlit.app/)
 
 ## 📌 About the Project
 This chatbot can:
